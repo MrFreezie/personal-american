@@ -192,6 +192,12 @@ function App() {
                       <p className="font-terminal text-gray-400 mb-4">
                         When the Continentals march, the world watches. But the battle for freedom has just begun.
                       </p>
+                      <div className="flex items-center gap-1 mb-6">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 fill-apocalypse-orange text-apocalypse-orange" />
+                        ))}
+                        <span className="ml-2 text-apocalypse-orange">(5/5)</span>
+                      </div>
                       <motion.a
                         href="https://www.amazon.com/American-Calamity-Continentals-Edward-Pocock/dp/1959620649/ref=pd_sbs_d_sccl_2_1/131-2302736-6613323?psc=1"
                         target="_blank"
