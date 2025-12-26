@@ -97,7 +97,7 @@ function App() {
       {/* Books Section */}
       <div id="books" className="py-20 bg-gradient-to-b from-black to-apocalypse-brown/20">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12">
             {/* Book 1 */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -209,6 +209,57 @@ function App() {
                         <Book className="w-5 h-5" />
                         Continue the Journey
                       </motion.a>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Book 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="book-card">
+                <motion.div
+                  whileHover={{
+                    scale: 1.02,
+                    transition: { duration: 0.3 }
+                  }}
+                  className="bg-black/60 p-8 rounded-lg border border-apocalypse-metal/30 crt-effect"
+                >
+                  <div className="flex items-center gap-4 mb-6">
+                    <Skull className="w-8 h-8 text-apocalypse-orange" />
+                    <h2 className="font-orbitron text-3xl text-apocalypse-orange">
+                      Book Three Coming Soon!
+                    </h2>
+                  </div>
+                  <div className="flex gap-8 items-start">
+                    <div className="w-1/2">
+                      <motion.div
+                        className="w-full aspect-[2/3] bg-black rounded-lg shadow-2xl book-cover flex flex-col items-center justify-center border-2 border-apocalypse-metal/50 relative overflow-hidden"
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-br from-apocalypse-metal/10 to-transparent"></div>
+                        <div className="text-apocalypse-orange text-8xl font-bold mb-4 relative z-10">?</div>
+                        <div className="absolute bottom-8 left-0 right-0 text-center">
+                          <div className="font-orbitron text-apocalypse-red text-xl tracking-widest">[REDACTED]</div>
+                        </div>
+                      </motion.div>
+                    </div>
+                    <div className="w-1/2">
+                      <p className="font-terminal text-gray-400 mb-4">
+                        Continue the story of [REDACTED] in the journey of [REDACTED]...
+                      </p>
+                      <motion.button
+                        disabled
+                        className="bg-apocalypse-metal/50 text-gray-500 font-orbitron py-3 px-6 rounded inline-flex items-center gap-2 cursor-not-allowed opacity-60"
+                      >
+                        <Book className="w-5 h-5" />
+                        LOADING...
+                      </motion.button>
                     </div>
                   </div>
                 </motion.div>
