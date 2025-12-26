@@ -240,7 +240,7 @@ function App() {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-apocalypse-orange/20 to-transparent mix-blend-overlay"></div>
                     <img
-                      src="/ed_pocock_silhouette.jpg"
+                      src="/ed_pocock_silhouette2.jpg"
                       alt="Edward Pocock"
                       className="rounded-lg shadow-2xl vintage-photo w-full max-w-[300px] mx-auto border-2 border-apocalypse-metal/30"
                     />
