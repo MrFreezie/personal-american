@@ -207,7 +207,7 @@ function App() {
                         className="bg-apocalypse-green text-black font-orbitron py-3 px-6 rounded inline-flex items-center gap-2"
                       >
                         <Book className="w-5 h-5" />
-                        Continue the Journey
+                        Buy Now on Amazon
                       </motion.a>
                     </div>
                   </div>
