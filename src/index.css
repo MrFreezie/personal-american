@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-green: #4ade80;
+  --flicker-duration: 2.5s;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.terminal-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--terminal-green) 0%,
+    var(--terminal-green) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  animation: scan 4s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.crt-effect {
+  position: relative;
+}
+
+.crt-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+.title-glow {
+  text-shadow: 0 0 10px var(--terminal-green),
+               0 0 20px var(--terminal-green),
+               0 0 30px var(--terminal-green);
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flicker-text {
+  animation: textFlicker var(--flicker-duration) infinite;
+}
+
+@keyframes textFlicker {
+  0% { opacity: 1; }
+  2% { opacity: 0.6; }
+  4% { opacity: 0.9; }
+  8% { opacity: 0.3; }
+  9% { opacity: 1; }
+  12% { opacity: 0.8; }
+  70% { opacity: 0.9; }
+  72% { opacity: 0.2; }
+  77% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 107, 53, 0.3);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.book-cover {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.book-card {
+  position: relative;
+}
+
+.book-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 107, 53, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dossier-card {
+  position: relative;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.9),
+    rgba(20, 20, 20, 0.9)
+  );
+}
+
+.vintage-photo {
+  position: relative;
+  filter: contrast(1.2) sepia(0.2) brightness(0.9);
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 0 20px rgba(255, 107, 53, 0.1),
+    0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.vintage-overlay {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 53, 0.1),
+    transparent
+  );
+  mix-blend-mode: overlay;
+}
+
+.typewriter-text {
+  border-right: 2px solid var(--terminal-green);
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(40, end),
+             blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--terminal-green) }
+}
+
+.transmission-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.transmission-text {
+  position: relative;
+  z-index: 1;
+}
+
+.transmission-overlay {
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(74, 222, 128, 0.03) 0px,
+    rgba(74, 222, 128, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  mix-blend-mode: overlay;
+}
