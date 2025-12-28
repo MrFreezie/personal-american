@@ -238,13 +238,13 @@ function App() {
                   <div className="flex gap-8 items-start">
                     <div className="w-1/2">
                       <motion.div
-                        className="w-full aspect-[2/3] bg-black rounded-lg shadow-2xl book-cover flex flex-col items-center justify-center border-2 border-apocalypse-metal/50 relative overflow-hidden"
+                        className="w-full aspect-[2/3] bg-black rounded-lg shadow-2xl book-cover flex flex-col items-center justify-center border-2 border-apocalypse-metal/50 relative"
                         whileHover={{ scale: 1.05 }}
                       >
                         <div className="absolute inset-0 bg-gradient-to-br from-apocalypse-metal/10 to-transparent"></div>
-                        <div className="text-apocalypse-orange text-8xl font-bold mb-4 relative z-10">?</div>
-                        <div className="absolute bottom-8 left-0 right-0 text-center">
-                          <div className="font-orbitron text-apocalypse-red text-base tracking-widest">[REDACTED]</div>
+                        <div className="text-apocalypse-orange text-6xl md:text-8xl font-bold mb-4 relative z-10">?</div>
+                        <div className="absolute bottom-4 md:bottom-8 left-0 right-0 text-center px-2">
+                          <div className="font-orbitron text-apocalypse-red text-xs md:text-sm tracking-widest">[REDACTED]</div>
                         </div>
                       </motion.div>
                     </div>
