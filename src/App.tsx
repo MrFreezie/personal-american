@@ -107,13 +107,11 @@ function App() {
             >
               <div className="book-card">
                 <motion.div
-                  whileHover={{ 
-                    rotateY: 5,
-                    rotateX: 1,
-                    scale: 1.05,
+                  whileHover={{
+                    scale: 1.02,
                     transition: { duration: 0.3 }
                   }}
-                  className="bg-black/60 p-8 rounded-lg border border-apocalypse-metal/30 crt-effect transform perspective-1000"
+                  className="bg-black/60 p-8 rounded-lg border border-apocalypse-metal/30 crt-effect"
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <Skull className="w-8 h-8 text-apocalypse-red" />
