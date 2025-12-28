@@ -245,7 +245,7 @@ function App() {
                         <div className="absolute inset-0 bg-gradient-to-br from-apocalypse-metal/10 to-transparent"></div>
                         <div className="text-apocalypse-orange text-8xl font-bold mb-4 relative z-10">?</div>
                         <div className="absolute bottom-8 left-0 right-0 text-center">
-                          <div className="font-orbitron text-apocalypse-red text-xl tracking-widest">[REDACTED]</div>
+                          <div className="font-orbitron text-apocalypse-red text-base tracking-widest">[REDACTED]</div>
                         </div>
                       </motion.div>
                     </div>
