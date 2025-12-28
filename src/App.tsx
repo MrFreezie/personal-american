@@ -164,8 +164,8 @@ function App() {
             >
               <div className="book-card">
                 <motion.div
-                  whileHover={{ 
-                    y: -20,
+                  whileHover={{
+                    scale: 1.02,
                     transition: { duration: 0.3 }
                   }}
                   className="bg-black/60 p-8 rounded-lg border border-apocalypse-metal/30 crt-effect"
