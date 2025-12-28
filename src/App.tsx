@@ -184,6 +184,7 @@ function App() {
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
+                        whileHover={{ scale: 1.05 }}
                       />
                     </div>
                     <div className="w-1/2">
