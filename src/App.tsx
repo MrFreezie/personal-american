@@ -53,7 +53,8 @@ function App() {
             </h1>
             <p className="font-terminal text-xl md:text-2xl text-apocalypse-green mb-8 opacity-90">
               Dive into Edward Pocock's gripping post-collapse saga—where justice rides alone, 
-              and freedom is a bloodstained path.
+              and freedom is a bloodstained path. In the ashes of America,
+two stories rise from the ruin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
