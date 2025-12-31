@@ -49,9 +49,7 @@ function App() {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="font-orbitron text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-apocalypse-orange flicker-text text-stroke">
-              In the ashes of America,
-              <br />
-              two stories rise from the ruin.
+              American Calamity by Edward Pocock
             </h1>
             <p className="font-terminal text-xl md:text-2xl text-apocalypse-green mb-8 opacity-90">
               Dive into Edward Pocock's gripping post-collapse saga—where justice rides alone, 
