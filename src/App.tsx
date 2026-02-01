@@ -378,7 +378,7 @@ two stories rise from the ruin.
               <img
                 src="/altrw_neon_smiley_transparent.png"
                 alt="Atlas Labs"
-                className="h-6 w-6 object-contain"
+                className="h-8 w-8 object-contain"
               />
             </div>
           </div>
