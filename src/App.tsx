@@ -370,8 +370,18 @@ two stories rise from the ruin.
 
       {/* Footer */}
       <footer className="bg-black py-8 border-t border-apocalypse-metal/30">
-        <div className="container mx-auto px-4 text-center font-terminal text-apocalypse-metal">
-          <p>&copy; 2025 Edward Pocock | SURVIVE. ADAPT. OVERCOME.</p>
+        <div className="container mx-auto px-4 font-terminal text-apocalypse-metal">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-center sm:text-left">&copy; 2025 Edward Pocock | SURVIVE. ADAPT. OVERCOME.</p>
+            <div className="flex items-center gap-2">
+              <span>Powered by Atlas Labs</span>
+              <img
+                src="/altrw_neon_smiley_transparent.png"
+                alt="Atlas Labs"
+                className="h-6 w-6 object-contain"
+              />
+            </div>
+          </div>
         </div>
       </footer>
 
